@@ -37,4 +37,5 @@ For the first problem, there is no way to escape text that shouldn't be interpre
  - restrict the power of the caching mechanism by defining it as a part of the templating language
  - collect all possible inclusions by abstract interpretation of the templates (most likely useless for e.g. dynamic template names)
 
- I will try to provide a more detailed write-up shortly.
+
+I will try to provide a more detailed write-up shortly.

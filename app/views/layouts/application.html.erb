@@ -9,11 +9,13 @@
 <body>
 
 <% cache 'header' do %>
-	<%= # render evil-regex-of-doom-seriously-this-is-a-ridiculous-approach %>
+	<%= "render evil-regex-of-doom-seriously-this-is-a-ridiculous-approach" %>
 <% end %>
 
+<hr>
+
 <% cache 'second header' do %>
-	<%= eval('r☹e☹n☹d☹e☹r p☹a☹r☹t☹i☹a☹l'.split('☹').join + ': "hello"') %>
+ 	<%= eval('r☹e☹n☹d☹e☹r p☹a☹r☹t☹i☹a☹l'.split('☹').join + ': "partials/hello"') %>
 <% end %>
 
 <%= yield %>

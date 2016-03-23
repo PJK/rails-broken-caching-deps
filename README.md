@@ -14,7 +14,7 @@ Consider the following two examples:
 <% end %>
 ```
 
-This showcase both a false positive and a false negative:
+This showcases both a false positive and a false negative:
 
 ```
 ⇒  rake cache_digests:nested_dependencies TEMPLATE=layouts/application
@@ -24,7 +24,7 @@ Running via Spring preloader in process 46193
 ]
 ```
 
-The current way of tracking dependencies (scanning through files with huge regexes) is fundamentaly broken. It ignores the (not regular) structure of the language and makes undocumented assumptions on the syntactic forms. In general, there is no complete and sound way to infer the dependencies statically, but this one is especially brittle.
+The current way of tracking dependencies (scanning through files with huge regexes) is fundamentally broken. It ignores the (not regular) structure of the language and makes undocumented assumptions on the syntactic forms. In general, there is no complete and sound way to infer the dependencies statically, but this one is especially brittle.
 
 Granted, explicit dependency specification solves the second issue, but even then the result is never verified. I would like to point out that this is *impossible* to do statically -- inclusion in templates is trivially undecidable. 
 

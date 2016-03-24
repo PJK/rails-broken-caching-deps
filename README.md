@@ -4,7 +4,7 @@ Consider the following two examples:
 
 ```erb
 <% cache 'header' do %>
-	<%= "render evil-regex-of-doom-seriously-this-is-a-ridiculous-approach" %>
+	<%# render evil content here %>
 <% end %>
 
 <hr>
